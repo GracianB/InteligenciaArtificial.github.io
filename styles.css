@@ -1,0 +1,122 @@
+/* Estilos básicos y tipografía */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #222;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, p {
+    margin: 0 0 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Encabezado y navegación */
+header {
+    padding: 20px;
+    background: linear-gradient(to right, #1A237E, #7E57C2);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Animaciones y transiciones avanzadas */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #FF5722;
+    }
+    50% {
+        background-color: #FFC107;
+    }
+    100% {
+        background-color: #FF5722;
+    }
+}
+
+.codificado {
+    font-size: 1.5em;
+    text-align: center;
+    animation: rotate 5s linear infinite, pulse 2s linear infinite;
+}
+
+.gallery-container img {
+    max-width: 100%;
+    transition: transform 0.5s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Transiciones y otros estilos */
+.contador-atractivo, .minijuego-container {
+    margin-bottom: 20px;
+}
+
+.contador-atractivo {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    transition: background-color 1s;
+}
+
+.contador-atractivo:hover {
+    background-color: rgba(255, 87, 34, 0.5);
+}
+
+.minijuego-container {
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.minijuego-container div {
+    width: 50px;
+    height: 50px;
+    background-color: #FF5722;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    animation: pulse 2s linear infinite;
+}
